@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Batman</title>
+    <!-- Añador icono de pestaña-->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!--Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Encabezado-->
+    <div id="header">
+        <h1 class="centrado">¿SUBWAY SURFERS: El juego de nuestra infancia!</h1>
+    </div>
+    <!--Contenido Principal-->
+    <div id="main">
+        <h1>SUBWAY SURFERS</h1>
+        <p> <a href="https://www.youtube.com/watch?v=rRzdU1bt0a8">'Subway Surfers'</a>, es un videojuego de plataformas para móviles codesarrollado por Kiloo,1​ una empresa privada con sede en Dinamarca y SYBO Games.2​ Está disponible para plataformas Microsoft
+            Windows, Android, iOS, Kindle, y Windows Phone. Los usuarios del juego toman el papel de un adolescente vándalo, quien al ser sorprendido haciendo grafitis en una estación de tren, corren por las vías férreas para poder escapar del inspector
+            y su perro. A medida que el vándalo corre, atrapa monedas de oro suspendidas en el aire mientras al mismo tiempo evita colisionar con los trenes y otros objetos. Los objetos especiales, tales como la caza semanal, pueden dar lugar a un premio
+            en el juego.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MqRw7neoz-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </p>
+        <h2 class="letra2">Record Mundial!!!
+        </h2>
+        <p>Randy Gardner (nacido alrededor de 1948) es el poseedor del récord de más tiempo que un humano ha pasado sin dormir.
+        </p>
+
+        <p>
+            En 1964, Gardner, un estudiante de secundaria en San Diego, California, permaneció despierto durante 264,4 horas (11 días y 25 minutos).
+        </p>
+        <p> Conocido por: Más tiempo sin dormir Ocupación: poseedor de récords</p>
+        <p> Nacido: 1948 (edad 70–71)</p>
+        <img src="img/main-qimg-73561e01ebdf4df0a9a89ac7a918367a-lq.jpg">
+        <p>
+            Vesna Vulović, azafata que ostenta el record mundial Guinness de sobrevivir a la caida mas alta sin paracaidas de sobrevivir a la altura : 10.160 m (33.330 pies; 6,31 mi).
+
+        </p>
+        <img src="img/img_2.jpeg" alt="">
+        <h2>¿Cual es su historia?</h2>
+        <p>La historia oficial es sencilla. Dos compañías de Dinamarca se ponían en contacto para desarrollar un título que mezclara tablas, railes, endless runner y gráficos bonitos para crear toda una bomba. Pero según indican algunas fuentes, esto no
+            fue todo lo que inspiró a Subway Surfers.
+        </p>
+        <img src="img/maxresdefault.jpg" alt="">
+        <h2>La historia Aterradora</h2>
+        <p>La historia falsa que apareció en Twitter sobre Subway Surfers. Un usuario de Twitter al azar tuiteó sobre el juego diciendo que Subway Surfers fue creado por el creador en memoria de su hijo fallecido. El tuit también declaró que su hijo perdió
+            la vida debido a un accidente en las vías del tren mientras patinaba.24 de juny 2021
+
+        </p>
+    </div>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/1.png" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/2.png" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/4.jpg" style="width:100%">
+            <div class="text">Four Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div class="footer">
+        <p>👨🏽‍💻 @developer</p>
+    </div>
+</body>
+
+</html>
