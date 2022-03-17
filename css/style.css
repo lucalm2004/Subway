@@ -121,6 +121,7 @@ img {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    padding: 0 05%;
 }
 
 
@@ -261,5 +262,8 @@ img {
         color: white;
         text-align: center;
         padding-top: 4%;
+    }
+    .slideshow-container {
+        padding-right: 2%;
     }
 }
